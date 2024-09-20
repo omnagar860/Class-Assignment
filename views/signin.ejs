@@ -1,0 +1,11 @@
+<% -include("./partials/header.ejs") %>
+
+<h1>user SignIn Page</h1>
+
+<form action="/user/signin" method="post">
+  <input type="text" name="username" placeholder="John Doe"> <br> <br>
+  <input type="password" name="password" placeholder="*******"> <br> <br>
+  <button>Sign In</button>
+</form>
+
+<% -include("./partials/footer.ejs") %>

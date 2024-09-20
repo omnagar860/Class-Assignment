@@ -1,0 +1,12 @@
+<% -include("./partials/header.ejs") %>
+
+<h1>user SignUp Page</h1>
+
+<form action="/user/signup" method="post">
+  <input type="text" name="username" placeholder="John Doe"> <br> <br>
+  <input type="email" name="email" placeholder="John@Doe.com"> <br> <br>
+  <input type="password" name="password" placeholder="*******"> <br> <br>
+  <button>Register</button>
+</form>
+
+<% -include("./partials/footer.ejs") %>

@@ -1,0 +1,11 @@
+<% -include("./partials/header.ejs") %>
+
+  <h1>User Profile Page</h1>
+
+  <a href="/user/change-password/<%= user._id%>">Change Password</a>
+  <a href="/user/change-password/<%=user._id%>">Change Password</a> <br>
+  <a href="/user/logout/<%=user._id %>">Log Out</a> <br>
+  <a href="/user/delete-account/<%=user._id %>">Delete Account</a> <br>
+  <a href="/user/update-user/<%=user._id %>">Update User</a> <br>
+
+  <% -include("./partials/footer.ejs") %>

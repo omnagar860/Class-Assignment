@@ -1,0 +1,11 @@
+<% -include("./partials/header.ejs") %>
+
+<h1>User UpdatePage</h1>
+
+<form action="/user/update-user/<%= user._id%>" method="post">
+  <input type="text" name="username" placeholder="John Doe"  value="<%=user.username%>"> <br> <br>
+  <input type="email" name="email" placeholder="John@doe.com" value="<%=user.email%>"> <br> <br>
+  <button>Update User</button>
+</form>
+
+<% -include("./partials/footer.ejs") %>
